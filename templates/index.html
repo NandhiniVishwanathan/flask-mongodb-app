@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<!-- Screen Title -->
+<h1 class="title">Calculator</h1>
+
+<div class="calculator">
+    <form method="POST">
+        <input type="text" name="display" value="{{ display }}" readonly>
+
+        <div class="buttons">
+            <button name="button" value="AC" class="func">AC</button>
+            <button name="button" value="DEL" class="func">⌫</button>
+            <button name="button" value="%" class="func">%</button>
+            <button name="button" value="/" class="op">÷</button>
+
+            <button name="button" value="7">7</button>
+            <button name="button" value="8">8</button>
+            <button name="button" value="9">9</button>
+            <button name="button" value="*" class="op">×</button>
+
+            <button name="button" value="4">4</button>
+            <button name="button" value="5">5</button>
+            <button name="button" value="6">6</button>
+            <button name="button" value="-" class="op">−</button>
+
+            <button name="button" value="1">1</button>
+            <button name="button" value="2">2</button>
+            <button name="button" value="3">3</button>
+            <button name="button" value="+" class="op">+</button>
+
+            <button name="button" value="(">(</button>
+            <button name="button" value=")">)</button>
+            <button name="button" value="." >.</button>
+            <button name="button" value="√" class="op">√</button>
+
+            <button name="button" value="0" class="zero">0</button>
+            <button name="button" value="=" class="equal">=</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
